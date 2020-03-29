@@ -8,3 +8,6 @@ Após criar a API Key você deve esperar alguns minutos para que ela seja ativad
 :one:Crie na raiz do seu projeto um arquivo chamado .env.
 
 :two:Coloque nele: REACT_APP_OPEN_WHEATHER_KEY=sua credencial do open wheater map
+
+### :page_with_curl: License
+Este software foi criado apenas para fins de estudo, sinta-se livre para experimentar.
