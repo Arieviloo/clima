@@ -6,5 +6,4 @@ Visite o site [https://openweathermap.org](https://openweathermap.org) e crie su
 Após criar a API Key você deve esperar alguns minutos para que ela seja ativada (para mim demorou 15 minutos), após isso você já pode utiliza-la 😁
 
 Crie na raiz do seu projeto um arquivo chamado .env e coloque nele:
-
 REACT_APP_OPEN_WHEATHER_KEY=sua credencial do open wheater map
