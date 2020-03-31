@@ -1,5 +1,7 @@
 import React, {Fragment, useState, useEffect} from 'react';
 import axios from 'axios';
+import { Container, Paper } from '@material-ui/core';
+import "./App.css"
 
 function App() {
   const [location, setLocation] = useState(false);
@@ -15,9 +17,7 @@ function App() {
         units: 'metric'
       }  
     });
-    setWeather(res.data);  
-    console.log(res.data);
-      
+    setWeather(res.data);        
   }
   
   useEffect(()=> {
@@ -25,7 +25,7 @@ function App() {
       getWeather(position.coords.latitude, position.coords.longitude);
       setLocation(true)
     })
-  }, [])
+  }, [])  
 
 if(!location){
   return (
@@ -40,9 +40,17 @@ if(!location){
     </Fragment>
   )
 }else {
-  return (
+  return (    
+    <Container maxWidth="sm" className="container">
     <Fragment>
-      <h3>Clima nas suas Coordenadas ({weather['weather'][0]['description']})</h3>
+      <Paper className="root" elevation={3}>
+        <div className="textt">
+
+      <h3>Clima nas suas Coordenadas (
+        {weather['weather'][0]['description']}
+          {weather.weather[0].main === "Clouds" ? "☁️" : "⛅"}
+        )
+      </h3>
       <hr />
       <ul>
         <li>Temperatura atual: {weather['main']['temp']}</li>
@@ -51,7 +59,10 @@ if(!location){
         <li>Pressão: {weather.main.pressure} </li>
         <li>Umidade: {weather.main.humidity}</li>
       </ul>
+        </div>
+      </Paper>
     </Fragment>
+    </Container>
 
   );
 }

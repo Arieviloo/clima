@@ -6,6 +6,19 @@
   height: 40vmin;
   pointer-events: none;
 }
+.textt {
+ background-color: #7159c3;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.textt > ul > li {
+  font-size: 20px;
+}
+.container {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
