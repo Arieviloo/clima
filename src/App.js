@@ -46,8 +46,8 @@ if(!location){
       <Paper className="root" elevation={3}>
         <div className="textt">
 
-      <h3>Clima nas suas Coordenadas (
-        {weather['weather'][0]['description']}
+      <h3>Clima nas suas Coordenadas</h3> 
+      <h3>({weather['weather'][0]['description']}
           {weather.weather[0].main === "Clouds" ? "☁️" : "⛅"}
         )
       </h3>
