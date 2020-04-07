@@ -13,6 +13,11 @@
  margin-top: 10px;
  padding-top: 5px;
 }
+.textt > h3 {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
 
 .textt > ul > li {
   width: 300px;
