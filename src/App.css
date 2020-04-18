@@ -14,7 +14,7 @@
  padding-top: 5px;
 }
 .textt > h3 {
-  color: #fff;
+  color: #363242;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@
 .textt > ul > li {
   width: 300px;
   font-size: 20px;
-  color: #fff;
+  color: #363242;
   padding: 5px 0 5px 0 ;
   list-style-type: none;
   font-weight: 500;
